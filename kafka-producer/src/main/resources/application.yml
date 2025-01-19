@@ -1,0 +1,8 @@
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+server:
+  port: 8080

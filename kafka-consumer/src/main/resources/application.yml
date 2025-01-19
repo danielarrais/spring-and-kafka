@@ -1,0 +1,15 @@
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: sales-processor
+
+  datasource:
+    password: postgres
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/kafka-consumer
+  data:
+    jdbc:
+      dialect: postgresql
+server:
+  port: 8081
